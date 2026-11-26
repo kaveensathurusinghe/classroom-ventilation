@@ -1,5 +1,7 @@
 # User guide
 
+The Julia notebook now draws and exports SVG charts using a bundled lightweight renderer. This affects notebook setup and chart file format, not the offline demo, equations or numerical results. Run the revised notebook in a fresh Julia Colab runtime and read `TOTAL_NOTEBOOK_SECONDS` from the final cell to assess its full execution time. Earlier Drive copies must be replaced or updated explicitly.
+
 Double-click `docs/index.html` in Chrome, Edge or Firefox. No network is required.
 
 1. Set occupants, outdoor temperature and opening-level wind speed.

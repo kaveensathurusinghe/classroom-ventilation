@@ -28,6 +28,8 @@ The setup prints `NOTEBOOK_ROOT`, identifying its temporary working directory. T
 
 Standard runs use embedded frozen weather, so no API key or separate weather download is needed. Initial dependency installation needs internet access. Keep installation enabled on a fresh runtime.
 
+The revised notebook uses a bundled Julia SVG chart renderer instead of Plots/GR/Qt. Its pinned manifest has 41 entries rather than 173, with no native graphics stack. Automatic package precompilation is disabled, and the small project wrapper loads from source to avoid repeated wrapper-cache compilation against kernel-loaded dependencies. The first cell prints `SETUP_SECONDS`; the final cell prints `TOTAL_NOTEBOOK_SECONDS`, including installation, verification, all 500 scenarios and exports. A fresh Colab timing of this revised version is still required; an earlier version exceeded ten minutes in setup. Downloaded/shared Drive notebooks do not update automatically when this repository changes.
+
 ### Run locally
 
 Clone the project, or use GitHub's **Code → Download ZIP** and extract the download:
