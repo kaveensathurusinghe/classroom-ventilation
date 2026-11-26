@@ -1,0 +1,32 @@
+{
+  "description": "Lightweight notebook replay; earlier run_manifest.json retains provenance of its earlier export. PNGs are earlier scientific plots; SVGs come from this replay.",
+  "julia_version": "1.12.7",
+  "run": {
+    "unchanged_scientific_and_test_payloads": 17,
+    "compared_csv_fields": 37824,
+    "svg_files": 7,
+    "manifest_entries": 41,
+    "elapsed_seconds": 57.57299995422363
+  },
+  "installation": "skipped locally; fresh free-tier Colab timing pending",
+  "setup_seconds": 20.79,
+  "in_notebook_total_seconds": 57.4,
+  "test_checks": 302,
+  "renderer_checks": 14,
+  "reconstructed_aggregate_fields": 825,
+  "sha256": {
+    "Project.toml": "df2956b8566a856f9d057e8320805064ca3f965ed606c6f2327f0ca0a416a939",
+    "Manifest.toml": "6ebac36666f99a1e138255acb19ecc4480ec4babef1bc785998d3adb740e0660",
+    "notebook/classroom-ventilation.ipynb": "abf3e70b41a74aabb7d444ec6cbfa9b043fd40b327bb10c8f53aaf52206a6885",
+    "notebook/svg-plots.jl": "09df86309c10bd9fe711fda2feb710bcdd3b811c9210d77f70dc1427c0571cf2",
+    "notebook/svg-checks.jl": "48d1418bba073d3172a3a1fc34019fa0910bce8eb39553ccb1190e80216c112b",
+    "notebook/export-results.jl": "134c0a675a52bdcff2b796a62d69dca5d9a1a25484f110b48b820d3748409d88",
+    "figures/solver_convergence.svg": "575365328e8b1aca7dbaf802647157fb777afa54fea7de9862fe154b687137df",
+    "figures/deterministic_baseline/co2.svg": "bbfb73addf20d708b80d3b7a3365a1dc7dc5a9e943e663653ed3d38f24561ed9",
+    "figures/deterministic_baseline/temperature.svg": "695b7cde7aca126f2a3b0f24b4210aca84648aad7df2c02142364c12e665c2d4",
+    "figures/deterministic_baseline/ventilation.svg": "34cf21d8c43d765095a7146f2b6c03787eadea4b72123fc33b13123544851b45",
+    "figures/monte_carlo/outcome_distributions.svg": "6e335f7ae7a79d71924569607c4b9c401c534d174efec9fd1e9300f30c665963",
+    "figures/monte_carlo/sensitivity.svg": "51cc0c502b9b385b3312052d2bce59e84575886da7530bcef506078aba66ecd4",
+    "figures/monte_carlo/weather_profiles.svg": "9aab1cda509f413ae273292f4a0d0ddb8b7ec8c227f43a1558768fab791aeeab"
+  }
+}
