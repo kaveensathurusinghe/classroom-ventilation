@@ -2,9 +2,9 @@
 
 Explore how window opening affects classroom CO₂ and air temperature using a reproducible single-zone simulation.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MG_kUucPrmwJb5UI5Mh-L4iM3Yj8zeMi?usp=sharing)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12tRdhrRquj53lTTo7m3MX0h7QMUEX5j4?usp=sharing)
 
-**[Open the shared Colab notebook](https://colab.research.google.com/drive/1MG_kUucPrmwJb5UI5Mh-L4iM3Yj8zeMi?usp=sharing)** · **[Repository notebook](notebook/classroom-ventilation.ipynb)** · **[User guide](USER_GUIDE.md)** · **[Model and equations](THEORY.md)**
+**[Open the shared Colab notebook](https://colab.research.google.com/drive/12tRdhrRquj53lTTo7m3MX0h7QMUEX5j4?usp=sharing)** · **[Repository notebook](notebook/classroom-ventilation.ipynb)** · **[User guide](USER_GUIDE.md)** · **[Model and equations](THEORY.md)**
 
 **Demo:** download the repository and open [docs/index.html](docs/index.html) locally. GitHub's file preview does not run the demo. A live hosted-demo URL has not yet been verified.
 
@@ -27,6 +27,8 @@ Which of closed, half-open and fully open windows controls CO₂ without excessi
 The setup prints `NOTEBOOK_ROOT`, identifying its temporary working directory. The final cell exports plots, tables, sampled inputs, outcomes and refinement records into that directory's `results/` folder by default. Runtime files are temporary and are not automatically committed to this repository. The shared Drive notebook and repository notebook are separate copies; edits do not automatically synchronise.
 
 Standard runs use embedded frozen weather, so no API key or separate weather download is needed. Initial dependency installation needs internet access. Keep installation enabled on a fresh runtime.
+
+The revised notebook uses a bundled Julia SVG chart renderer instead of Plots/GR/Qt. Its pinned manifest has 41 entries rather than 173, with no native graphics stack. Automatic package precompilation is disabled, and the small project wrapper loads from source to avoid repeated wrapper-cache compilation against kernel-loaded dependencies. The first cell prints `SETUP_SECONDS`; the final cell prints `TOTAL_NOTEBOOK_SECONDS`, including installation, verification, all 500 scenarios and exports. A fresh Colab timing of this revised version is still required; an earlier version exceeded ten minutes in setup. Downloaded/shared Drive notebooks do not update automatically when this repository changes.
 
 ### Run locally
 
