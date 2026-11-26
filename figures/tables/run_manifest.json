@@ -1,0 +1,92 @@
+{
+  "run": {
+    "julia_version": "1.12.7",
+    "completed_utc": "2026-11-25T21:00:18.496",
+    "elapsed_seconds": 30.460999965667725,
+    "code_cells": 6,
+    "dependency_installation": "explicitly skipped; preinstalled dependencies; fresh installation unverified",
+    "note": "Sequential fresh-process local replay; not Colab or browser verification. Pkg reported 28 dependencies precompiled but different versions currently loaded."
+  },
+  "seed": 4042,
+  "sample_count": 500,
+  "comparisons_with_pre_refresh_tables": {
+    "monte_carlo_summary": {
+      "max_absolute_numeric_difference": 0.0,
+      "different_numeric_fields": 0
+    },
+    "monte_carlo_event_probabilities": {
+      "max_absolute_numeric_difference": 0.0,
+      "different_numeric_fields": 0
+    },
+    "monte_carlo_paired_differences": {
+      "max_absolute_numeric_difference": 8.881784197001252e-15,
+      "different_numeric_fields": 20
+    },
+    "monte_carlo_sensitivity": {
+      "max_absolute_numeric_difference": 0.0,
+      "different_numeric_fields": 0
+    },
+    "deterministic_baseline_summary": {
+      "max_absolute_numeric_difference": 0.0,
+      "different_numeric_fields": 0
+    },
+    "deterministic_baseline_step_refinement": {
+      "max_absolute_numeric_difference": 0.0,
+      "different_numeric_fields": 0
+    }
+  },
+  "files": {
+    "figures/solver_convergence.png": "5e0a72ea84bc4089035144028f501859047c72530fa9f10d93b84b6942c656c6",
+    "figures/deterministic_baseline/co2.png": "314e9eb63d939fc2e9c2e8a564ba0745ac6cc588c6bfc46a7fe7e4d3bf36b8ea",
+    "figures/deterministic_baseline/co2.svg": "b98c50cf9cf81d1e00076726bae08b36a14778c0e8466ca6e4e6b3966b8c45ea",
+    "figures/deterministic_baseline/temperature.png": "d0c2fe5f3dad0db57f45589d548bcd580b2eea40c8e8046788726a9ce3f3bb6d",
+    "figures/deterministic_baseline/temperature.svg": "2e170c3868447126db06631c54886ecec18143d4d46500ba895606657f194ca9",
+    "figures/deterministic_baseline/ventilation.png": "2e021bbc642dbca83f3592d5bfb140c13fbc79f59530b22dd7ab017263880042",
+    "figures/deterministic_baseline/ventilation.svg": "67693dd2b5c9404a75e018c2ed0673b05c0d2ae5b090601ce925a270672f2bc4",
+    "figures/monte_carlo/outcome_distributions.png": "73c8d1dfcd2f976362dba957462de1864f3c8736921685f08e3ba8c3dbb55212",
+    "figures/monte_carlo/outcome_distributions.svg": "3f486a73c606ab5befad0a9899ea6f4044e755c9ec997168d7c0c7c12ba8331c",
+    "figures/monte_carlo/sensitivity.png": "5c1a0e59c74c6d36a683adf97640091705e6b46e8b5752a04e3b4be67961d8ed",
+    "figures/monte_carlo/sensitivity.svg": "c288c77b1cd5b3947f31aaa62a99304363030b34f871ed7233837f740a487549",
+    "figures/monte_carlo/weather_profiles.png": "c66c360d7cae04eaed0c2e3138d47183b6ea2badddb0311af1e38a415a89eb27",
+    "figures/monte_carlo/weather_profiles.svg": "387a3babd2d73b9a8e2d0d2f1bbc7c9241cef9a168de51d0f7969fc248710172",
+    "figures/tables/deterministic_baseline_step_refinement.csv": "4496628ecfc1a76b12c3139ec013b199c0a6bc369875f506f2ebd63dc2bf3893",
+    "figures/tables/deterministic_baseline_summary.csv": "b63e63aba379a921aa909aad541543c440ee98efb45e6f39ef1c464ecbb94bef",
+    "figures/tables/monte_carlo_event_probabilities.csv": "38ea1d8bfc28573400795af121c40aab9108d6d543ada19791076741bcf967a9",
+    "figures/tables/monte_carlo_inputs.csv": "88012dcdecfaec53af9127466eb3610a92ba7f13e269c960391bad9a7f8aa638",
+    "figures/tables/monte_carlo_outcomes.csv": "5edb5e3fdbc352f9979a3b95afdf3ca432da7dabdbf97073bb438491c273968a",
+    "figures/tables/monte_carlo_paired_differences.csv": "cf22504ad5380e6e2b10fb862ca6b1a7b00963ec826cb8982b737165f02cfbce",
+    "figures/tables/monte_carlo_precision_prefixes.csv": "cf6156bbe4a3b5ece0c654bb9fba43684b4227dceb1a9d9b2e9acb4ba34af5ce",
+    "figures/tables/monte_carlo_raw.json": "75720e6ef7eb3a3771ded6ba4c05f0f426eac22bfdaa0d14b5fef77a2598c2d1",
+    "figures/tables/monte_carlo_refinements.csv": "bdabc2d5155d9badd3a3e2be534a1554b1b0517d7dd56c31067a0b753d6e3899",
+    "figures/tables/monte_carlo_sensitivity.csv": "8ec824aa1ce1b5b6003036d06515628eafe4e7fd7ed34e3fdd4e47ec273ae361",
+    "figures/tables/monte_carlo_summary.csv": "3aaa6170986727fe8e6beb0327e3d9b3e899b34c7df7c4ff5d6ea4cb548bfaa4",
+    "figures/tables/monte_carlo_weather_knots.csv": "ce5679ca7835fa669b2b4f16f603ca240204cf9fc5ec127e9a86129f986429a2",
+    "figures/tables/solver_convergence.csv": "598788928302e1268cad023f164a08ab06ea875674040dac88971a2175843bff",
+    "figures/tables/README.md": "e28977b0aa5c28ab925c56701f29853294f1e206dcf648faf4f05c979096e1cd"
+  },
+  "embedded_source_sha256": {
+    "Project.toml": "ec5874d3c5fc21a7f4c89364b3098629530f9c419f6eda7424ebd9b3539d4382",
+    "Manifest.toml": "262f8869e8fc60b12b4a8d4ffaee69175fd3479c0dede62942c06bcdcdf6e07e",
+    "src/analysis/metrics.jl": "59c8def8de27274910e43a00272210cc536091f270e9fd1b3234c1950d6c22bd",
+    "src/ClassroomVentilation.jl": "0d9c4a322061a09c4390c0b445ae85e81127dedd2eb5765a1e4dec12a140208a",
+    "src/experiments/fixed_strategies.jl": "5389f794c7684bb4d2fa66de8356e624f995399bcb990f69a0ce98cee343983a",
+    "src/experiments/monte_carlo.jl": "cf73cd65d8dd6bdb067590c09d50a15a7525ead3a87188c82d15e3416747cabd",
+    "src/inputs/uncertainty.jl": "29f652f57272ffd77d9e6c922b6c2cd6d1568289288d3dbc26cecdd7903f3a87",
+    "src/inputs/weather.jl": "c934dd474e2541010667ec5423766746b0e3cab068fe7a3be124ab1e15232419",
+    "src/models/balances.jl": "43ee3c0be0ca8c2b726307c7865f4aa6bdc44e424574df85b20c5397010da557",
+    "src/models/parameters.jl": "089ded1d2f083a924d1532d366989ed25c796893e24e7d076a2d249d481df1cc",
+    "src/models/ventilation.jl": "480e6cb66016ac2abe0713cccefce4a3163c771d0b3e69eb1c069281a6ef48fa",
+    "src/solvers/explicit.jl": "937415f80ba35896c1aa19025ef0d5ba0272223504f1df2dc93edad9a1bf912a",
+    "test/experiments.jl": "bbd5779b973a135b3d1775f02493a95da023d5cd869d4514b51bb4f1835156ed",
+    "test/physical_model.jl": "d9cf88acaa8d4d23654f6ba6a014e5a4c839053decf066dd54f11cfbf6da678e",
+    "test/runtests.jl": "25ffb437b705ba1502791093b33ad442e718348e7d8f224af33f50eb83642ae5",
+    "test/solvers.jl": "3ab4b9a0dd2fbec996f21cc2d001862ee691c479f7d4e6cc483ba752f17da519",
+    "test/uncertainty.jl": "c824b7dce163b42d770b59556b7c84b3033225140e81f45ec43cba0daa4f023e",
+    "verification/benchmarks.jl": "5453db0786188dc34501f91198c2b4318907dfc93e2bf9c0135941f88d9f4e50",
+    "data/raw/malabe_era5_2025_03.json": "284428f880d4708dab244858efc6e26ea36a28b61a9cc9012362dd3ff6f3efda",
+    "data/raw/malabe_era5_2025_03.json.metadata.json": "914a6064155bd0e752f3b3234aa61afe19c9ded70c35e82c0859f76188e5b656",
+    "verification/export-results.jl": "4df505210ed83a4112434c600325d53a3f8f0ab33474c654d2bb052b1811a3b7"
+  },
+  "notebook_sha256": "6436e4b32f304ad8720c0de46ab5bd046774c454be8181454ec723aba675cecc",
+  "demo_reference_sha256": "63eeee3e257d6665f8e6646a625d910a7c9830449b4882b3778ea5bdc451ca4e"
+}

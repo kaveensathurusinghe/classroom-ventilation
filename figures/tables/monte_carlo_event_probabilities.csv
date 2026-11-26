@@ -1,0 +1,10 @@
+strategy,event,successes,n,probability,ci_low,ci_high
+"closed","any_co2_exceedance","500","500","1.0","0.9923756595384479","1.0"
+"closed","any_temperature_exceedance","500","500","1.0","0.9923756595384479","1.0"
+"closed","both_limits_met_entire_lecture","0","500","0.0","0.0","0.007624340461552241"
+"partial","any_co2_exceedance","51","500","0.102","0.07843435210316954","0.13163462290422606"
+"partial","any_temperature_exceedance","500","500","1.0","0.9923756595384479","1.0"
+"partial","both_limits_met_entire_lecture","0","500","0.0","0.0","0.007624340461552241"
+"full","any_co2_exceedance","0","500","0.0","0.0","0.007624340461552241"
+"full","any_temperature_exceedance","500","500","1.0","0.9923756595384479","1.0"
+"full","both_limits_met_entire_lecture","0","500","0.0","0.0","0.007624340461552241"

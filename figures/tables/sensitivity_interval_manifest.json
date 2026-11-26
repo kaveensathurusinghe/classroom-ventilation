@@ -1,0 +1,13 @@
+{
+  "seed": 404205,
+  "rng": "NumPy PCG64",
+  "bootstrap_count": 2000,
+  "python": "3.14.5",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "raw_sha256": "75720e6ef7eb3a3771ded6ba4c05f0f426eac22bfdaa0d14b5fef77a2598c2d1",
+  "script_sha256": "58ae40a4e151ce8643efda93d0db00dd360a382e59e23657a31c8b128aa0558b",
+  "method": "IID scenario-row paired bootstrap; rerank each resample; pointwise percentile 95% CI; undefined replicates suppress CI",
+  "rows": 132,
+  "undefined_rows": 11
+}
