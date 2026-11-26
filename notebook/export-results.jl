@@ -87,13 +87,13 @@ function export_results(destination)
         temperature_duration_difference_seconds=3600abs(a.metrics.hours_outside_temperature_band-b.metrics.hours_outside_temperature_band)) for (a,b) in zip(baseline,refined)])
     for sub in ("deterministic_baseline","monte_carlo");mkpath(joinpath(destination,sub));end
     function saveboth(p,relative)
-        for ext in ("png","svg");savefig(p,joinpath(destination,relative*"."*ext));end
+        for ext in ("svg",);savefig(p,joinpath(destination,relative*"."*ext));end
     end
     saveboth(pc,"deterministic_baseline/co2");saveboth(pt,"deterministic_baseline/temperature")
     pv=plot(;xlabel="Minutes",ylabel="ACH (1/hour)",title="Assumed ventilation")
     for r in baseline;plot!(pv,60r.solution.times,r.ach;label=string(r.strategy));end
     saveboth(pv,"deterministic_baseline/ventilation")
-    savefig(error_plot,joinpath(destination,"solver_convergence.png"))
+    savefig(error_plot,joinpath(destination,"solver_convergence.svg"))
     panels=[]
     for metric in metrics
         panel=plot(;xlabel=string(metric),ylabel="Empirical cumulative probability",legend=:bottomright,
