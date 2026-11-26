@@ -1,5 +1,17 @@
 # Execution record
 
+## Reviewed Colab execution and public demo - 26 November 2026
+
+The owner supplied the revised executed notebook. Its six code-cell sources match the repository notebook exactly. The canonical notebook now uses these genuine Colab outputs instead of earlier local outputs that printed a developer workspace path. No numerical values were edited and no simulation was rerun for this publication cleanup. Earlier local records remain historical; their timing is not the Colab timing.
+
+- Printed Julia version: **1.12.6**. Loaded JSON 1.13.4 and Statistics 1.11.5.
+- **SETUP_SECONDS=101.339**; **TOTAL_NOTEBOOK_SECONDS=172.167** (2 minutes 52.167 seconds). Installation ran, including JSON and parser dependencies. The export has execution counts 1-6 and three SVG outputs. It contains no notebook-level error outputs.
+- All **302 tests passed**. All **500 paired scenarios** and **1500 refinement records** completed. Final exports and round-trip/seed checks passed. Deterministic results and maximum refinement deltas match the documented standard outputs.
+- Setup and verification streams retain compiler/task-print diagnostics. The project cache opt-out caused a skip-precompilation notice. Completion is demonstrated by later tests and export messages; this is not a warning-free run. Account tier and hardware are not recorded, so no particular free-tier configuration or universal timing guarantee is asserted.
+- An unauthenticated HTTP request to `https://kaveensathurusinghe.github.io/classroom-ventilation/` returned **200**, with the expected title and Julia-reference button. This confirms the published entry page was accessible, not an automated browser control/console audit. Earlier owner screenshots and Pause/Reset reports remain the browser-operation evidence.
+
+The public version's scientific implementation, step sizes, scenario count and tolerances are unchanged. Publication metadata and documentation are maintained separately from empirical validation claims.
+
 ## Lightweight setup revision - 26 November 2026
 
 The owner reported the previous setup cell still executing after 10 minutes 10 seconds. This establishes a slow previous setup; successful earlier calculations alone did not meet the approximate ten-minute fresh-run target.

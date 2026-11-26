@@ -1,6 +1,6 @@
 # User guide
 
-The Julia notebook now draws and exports SVG charts using a bundled lightweight renderer. This affects notebook setup and chart file format, not the offline demo, equations or numerical results. Run the revised notebook in a fresh Julia Colab runtime and read `TOTAL_NOTEBOOK_SECONDS` from the final cell to assess its full execution time. Earlier Drive copies must be replaced or updated explicitly.
+The Julia notebook now draws and exports SVG charts using a bundled lightweight renderer. This affects notebook setup and chart file format, not the offline demo, equations or numerical results. A reviewed Julia 1.12.6 Colab run took 172.167 seconds in total, including setup. For a new run, use a fresh Julia runtime and read `TOTAL_NOTEBOOK_SECONDS` from the final cell; timing varies by environment. Earlier Drive copies must be replaced or updated explicitly.
 
 Open the [live demo](https://kaveensathurusinghe.github.io/classroom-ventilation/) in Chrome, Edge or Firefox.
 
@@ -16,6 +16,8 @@ Try 35 occupants, 29 °C and 2 m/s, then reduce wind to 0.2 m/s or raise occupan
 
 The comparison limits are illustrative, not health/regulatory limits. Outdoor CO₂ is 420 ppm and initial state is (450 ppm,28 °C). Background infiltration remains with closed windows. Air-only thermal storage can yield unrealistic warming. The demo is deterministic; use the notebook for historical-weather Monte Carlo.
 
-Execution status is in [verification record](notebook/VERIFICATION.md). A labelled screenshot remains to be added after visual browser verification.
+Execution status is in [verification record](notebook/VERIFICATION.md). The screenshot below comes from an owner-operated browser run, with labels added for navigation. It shows 2 occupants, 24.5 C and 5 m/s, paused at 35 minutes. A identifies controls, B plots and C elapsed-time metrics; the PASS message tests the default reference independently of the current sliders.
+
+![Demo controls, plots and elapsed-time metrics](figures/demo-controls.png)
 
 The Julia-reference button checks agreement between implementations, not absolute accuracy of the ODE solution. For the tested hot/calm case (45 people,34 C,zero wind,fully open), the demo's 15-second sampled peak is 814.383340 ppm versus a refined continuous reference of 814.417082 ppm: an error of -0.033743 ppm. This case does not meet 0.01 ppm absolute peak accuracy. See the [refinement investigation](notebook/notes/hot-calm-accuracy.md) for error separation and supported finer steps; no universal slider-range accuracy is claimed.

@@ -2,9 +2,9 @@
 
 Explore how window opening affects classroom CO₂ and air temperature using a reproducible single-zone simulation.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12tRdhrRquj53lTTo7m3MX0h7QMUEX5j4?usp=sharing) [![Open live demo](https://img.shields.io/badge/Live_demo-Open-00897b?logo=githubpages&logoColor=white)](https://kaveensathurusinghe.github.io/classroom-ventilation/)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kaveensathurusinghe/classroom-ventilation/blob/main/notebook/classroom-ventilation.ipynb) [![Open live demo](https://img.shields.io/badge/Live_demo-Open-00897b?logo=githubpages&logoColor=white)](https://kaveensathurusinghe.github.io/classroom-ventilation/)
 
-**[Open the shared Colab notebook](https://colab.research.google.com/drive/12tRdhrRquj53lTTo7m3MX0h7QMUEX5j4?usp=sharing)** · **[Repository notebook](notebook/classroom-ventilation.ipynb)** · **[User guide](USER_GUIDE.md)** · **[Model and equations](THEORY.md)**
+**[Open the notebook in Colab](https://colab.research.google.com/github/kaveensathurusinghe/classroom-ventilation/blob/main/notebook/classroom-ventilation.ipynb)** · **[Repository notebook](notebook/classroom-ventilation.ipynb)** · **[User guide](USER_GUIDE.md)** · **[Model and equations](THEORY.md)**
 
 For offline use, download the repository and open [docs/index.html](docs/index.html) locally. GitHub's file preview does not run the demo.
 
@@ -24,11 +24,11 @@ Which of closed, half-open and fully open windows controls CO₂ without excessi
 4. Check the printed Julia version and verification results, then inspect the deterministic plots, Monte Carlo summaries and paired comparisons.
 5. Save the completed notebook and download any generated results you need before the runtime disconnects.
 
-The setup prints `NOTEBOOK_ROOT`, identifying its temporary working directory. The final cell exports plots, tables, sampled inputs, outcomes and refinement records into that directory's `results/` folder by default. Runtime files are temporary and are not automatically committed to this repository. The shared Drive notebook and repository notebook are separate copies; edits do not automatically synchronise.
+The setup prints `NOTEBOOK_ROOT`, identifying its temporary working directory. The final cell exports plots, tables, sampled inputs, outcomes and refinement records into that directory's `results/` folder by default. Runtime files are temporary and are not automatically committed to this repository. The Colab button opens the repository notebook. Saving a personal Drive copy creates a separate copy that does not synchronise automatically.
 
 Standard runs use embedded frozen weather, so no API key or separate weather download is needed. Initial dependency installation needs internet access. Keep installation enabled on a fresh runtime.
 
-The revised notebook uses a bundled Julia SVG chart renderer instead of Plots/GR/Qt. Its pinned manifest has 41 entries rather than 173, with no native graphics stack. Automatic package precompilation is disabled, and the small project wrapper loads from source to avoid repeated wrapper-cache compilation against kernel-loaded dependencies. The first cell prints `SETUP_SECONDS`; the final cell prints `TOTAL_NOTEBOOK_SECONDS`, including installation, verification, all 500 scenarios and exports. A fresh Colab timing of this revised version is still required; an earlier version exceeded ten minutes in setup. Downloaded/shared Drive notebooks do not update automatically when this repository changes.
+The revised notebook uses a bundled Julia SVG chart renderer instead of Plots/GR/Qt. Its pinned manifest has 41 entries rather than 173, with no native graphics stack. Automatic package precompilation is disabled, and the small project wrapper loads from source to avoid repeated wrapper-cache compilation against kernel-loaded dependencies. The first cell prints `SETUP_SECONDS`; the final cell prints `TOTAL_NOTEBOOK_SECONDS`, including installation, verification, all 500 scenarios and exports. A recorded Julia 1.12.6 Colab run completed setup in **101.339 seconds** and the full notebook in **172.167 seconds** on 26 November 2026, including installation, tests, 500 paired scenarios and exports. This is one observed run, not a runtime guarantee; compiler diagnostics were retained. Downloaded/shared Drive notebooks do not update automatically when this repository changes.
 
 ### Run locally
 
@@ -41,9 +41,9 @@ cd classroom-ventilation
 
 Use Julia 1.12 or later (verified locally with 1.12.7). Open `notebook/classroom-ventilation.ipynb` with a Julia notebook kernel locally, or upload it to a Julia Colab runtime, then run its cells from top to bottom.
 
-The first code cell prints Julia's version, unpacks the embedded Julia source and frozen weather into a temporary project, and installs dependencies. The root `Project.toml` and `Manifest.toml` describe that embedded environment. No repository URL or machine-specific input path is needed. An owner-executed Colab export reviewed on 26 November shows completed calculations on Julia 1.12.6, 302 passing tests and 500 paired scenarios. Setup completed with dependency-version and precompilation diagnostics; total elapsed time and free-tier status were not recorded, so the ten-minute target remains unverified. See [the evidence review](notebook/VERIFICATION.md).
+The first code cell prints Julia's version, unpacks the embedded Julia source and frozen weather into a temporary project, and installs dependencies. The root `Project.toml` and `Manifest.toml` describe that embedded environment. No repository URL or machine-specific input path is needed. The reviewed owner-executed Colab export records Julia 1.12.6, all 302 tests passing, 500 paired scenarios and a total of 172.167 seconds. Account tier and runtime hardware were not captured in the export. Setup/compiler diagnostics remain documented. See [the evidence review](notebook/VERIFICATION.md).
 
-The saved notebook includes outputs from a local sequential Julia replay using preinstalled dependencies; that run does not verify fresh installation or Colab execution.
+The repository notebook now carries the genuine reviewed Colab outputs. Its six code-cell sources match the executed copy; earlier local execution metadata is retained separately as historical context.
 
 Double-click `docs/index.html` for the offline demo; no server, key or CDN is required. See [USER_GUIDE.md](USER_GUIDE.md).
 
@@ -110,7 +110,7 @@ On the smooth analytical benchmark, finest-grid CO₂ error orders are approxima
 
 Numerical ODE solvers, inverse-transform random variate generation, Monte Carlo with common random inputs, confidence intervals, conservation and stability checks, and descriptive sensitivity screening.
 
-The [extension evidence assessment](notebook/notes/extension-evidence.md) maps independent verification and measured log-log convergence to X2, and the systematic sensitivity study with new bootstrap intervals to X5. Both remain conditional on qualifying public-release requirements (X1); extension credit is not claimed as complete. Historical weather forcing does not establish X4 calibration or validation.
+The [verification and sensitivity evidence](notebook/notes/extension-evidence.md) explains the independent analytical checks, measured log-log convergence and paired sensitivity bootstrap intervals. Historical weather forcing supplies environmental inputs; it does not establish classroom calibration or empirical validation.
 
 ## Results, limitations and future work
 
