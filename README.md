@@ -2,11 +2,9 @@
 
 Explore how window opening affects classroom CO₂ and air temperature using a reproducible single-zone simulation.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12tRdhrRquj53lTTo7m3MX0h7QMUEX5j4?usp=sharing)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12tRdhrRquj53lTTo7m3MX0h7QMUEX5j4?usp=sharing) [![Open live demo](https://img.shields.io/badge/Live_demo-Open-00897b?logo=githubpages&logoColor=white)](https://kaveensathurusinghe.github.io/classroom-ventilation/)
 
 **[Open the shared Colab notebook](https://colab.research.google.com/drive/12tRdhrRquj53lTTo7m3MX0h7QMUEX5j4?usp=sharing)** · **[Repository notebook](notebook/classroom-ventilation.ipynb)** · **[User guide](USER_GUIDE.md)** · **[Model and equations](THEORY.md)**
-
-**[Open the live demo](https://kaveensathurusinghe.github.io/classroom-ventilation/)**
 
 For offline use, download the repository and open [docs/index.html](docs/index.html) locally. GitHub's file preview does not run the demo.
 
