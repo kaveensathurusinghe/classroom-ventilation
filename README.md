@@ -6,7 +6,9 @@ Explore how window opening affects classroom CO₂ and air temperature using a r
 
 **[Open the shared Colab notebook](https://colab.research.google.com/drive/12tRdhrRquj53lTTo7m3MX0h7QMUEX5j4?usp=sharing)** · **[Repository notebook](notebook/classroom-ventilation.ipynb)** · **[User guide](USER_GUIDE.md)** · **[Model and equations](THEORY.md)**
 
-**Demo:** download the repository and open [docs/index.html](docs/index.html) locally. GitHub's file preview does not run the demo. A live hosted-demo URL has not yet been verified.
+**[Open the live demo](https://kaveensathurusinghe.github.io/classroom-ventilation/)**
+
+For offline use, download the repository and open [docs/index.html](docs/index.html) locally. GitHub's file preview does not run the demo.
 
 ![CO₂ trajectories](figures/deterministic_baseline/co2.png)
 

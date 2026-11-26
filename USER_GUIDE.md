@@ -2,7 +2,9 @@
 
 The Julia notebook now draws and exports SVG charts using a bundled lightweight renderer. This affects notebook setup and chart file format, not the offline demo, equations or numerical results. Run the revised notebook in a fresh Julia Colab runtime and read `TOTAL_NOTEBOOK_SECONDS` from the final cell to assess its full execution time. Earlier Drive copies must be replaced or updated explicitly.
 
-Double-click `docs/index.html` in Chrome, Edge or Firefox. No network is required.
+Open the [live demo](https://kaveensathurusinghe.github.io/classroom-ventilation/) in Chrome, Edge or Firefox.
+
+For offline use, download the repository and double-click `docs/index.html`. No network is required for the downloaded demo.
 
 1. Set occupants, outdoor temperature and opening-level wind speed.
 2. Press **Start** to animate the three fixed strategies together.
