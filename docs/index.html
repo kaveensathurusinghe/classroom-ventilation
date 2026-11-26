@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Classroom Ventilation Explorer</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><p class="eyebrow">A SINGLE-ZONE SIMULATION</p><h1>Let the classroom breathe.</h1><p>Compare window opening, indoor CO₂ and air temperature over a two-hour lecture.</p></header>
+<section class="controls" aria-label="Simulation parameters">
+<label>Occupants <output id="nValue">35</output><input id="occupants" type="range" min="0" max="60" step="1" value="35"></label>
+<label>Outdoor temperature <output id="tValue">29 °C</output><input id="temperature" type="range" min="20" max="36" step="0.5" value="29"></label>
+<label>Opening-level wind <output id="wValue">2 m/s</output><input id="wind" type="range" min="0" max="5" step="0.1" value="2"></label>
+<div class="buttons"><button id="start">Start</button><button id="pause">Pause</button><button id="reset">Reset</button><button id="reference">Check Julia reference</button></div>
+<p id="status" role="status">Ready. Press Start.</p><p id="checkStatus" role="status"></p>
+</section>
+<p class="legend"><span>● Closed</span><span>● Half open</span><span>● Fully open</span></p>
+<section class="charts"><div><h2>Indoor CO₂</h2><canvas id="co2" width="850" height="370" aria-label="CO2 trajectories" role="img"></canvas></div><div><h2>Indoor air temperature</h2><canvas id="heat" width="850" height="370" aria-label="Temperature trajectories" role="img"></canvas></div></section>
+<section class="table"><h2>Lecture metrics <small id="elapsed">0 / 120 minutes</small></h2><table><thead><tr><th>Windows</th><th>Peak CO₂ (ppm)</th><th>Above 1000 ppm (min)</th><th>Peak temperature (°C)</th><th>Outside 24–30 °C (min)</th></tr></thead><tbody id="metrics"></tbody></table></section>
+<details open><summary>About / How to use</summary><p>Choose parameters, then Reset to apply them. Start animates all three strategies; Pause and Start resume the same run. The table covers elapsed time. The reference check always uses the complete default case.</p><p>Assumed room: 179.2 m³; initial CO₂ 450 ppm; initial temperature 28 °C; outdoor CO₂ 420 ppm. Manual RK4, 15-second steps. Closed windows retain 0.3 air changes/hour of infiltration. All coefficients are uncalibrated.</p><p>The temperature model stores heat only in air, so closed-window warming can be unrealistic. Comparison limits are illustrative, not regulatory or health limits. This is neither CFD nor a complete thermal-comfort model. Historical weather and uncertainty experiments are available in the Julia notebook.</p><p>JavaScript implementation: AI-generated; quantitative agreement is tested against Julia. See the repository theory, references and provenance note.</p></details>
+</main><script src="reference.js"></script><script src="script.js"></script></body></html>
